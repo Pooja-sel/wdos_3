@@ -1,0 +1,625 @@
+body {
+    color:black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+   
+    }
+    
+    .container {
+    overflow: hidden;
+    background-color: #edc0c0;
+    }
+    
+    .container li {
+    list-style: none;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    .spices_topic{
+        border: 5px solid black;
+       margin-left: 350px;
+        margin-right: 350px;
+    }
+    
+    .container li:hover {
+    background-color: #ddd;
+    color: black;
+    }
+    
+    .container li.active {
+    background-color: #04AA6D;
+    color: white;
+    }
+
+    a {
+    color:black;
+    text-decoration: none;
+    }
+
+
+    .discover_text {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    color: white;
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    font-weight: bold;
+    }
+
+    .c {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: serif;
+    }
+
+    #row1, #row2, #row3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    
+    /* Parent Container */
+    .content_img{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin-right: 10px;
+    }
+    
+    /* Child Text Container */
+    .content_img div{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: black;
+        color: white;
+        margin-bottom: 5px;
+        font-family: sans-serif;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+    
+      }
+       
+    /* Hover on Parent Container */
+    .content_img:hover{
+        cursor: pointer;
+    }
+    
+    .content_img:hover div{
+        width: 150px;
+        padding: 8px 15px;
+        visibility: visible;
+        opacity: 0.7; 
+    }
+
+
+    .listflex {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+    .list_spices {
+        flex: 50%;
+    }
+    .list {
+        font-family:'Times New Roman', Times, serif;
+        background-color:#edc0c0;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px;
+        border: 5px solid burlywood;
+    }
+
+    .container-fluid {
+        text-align: center;
+    }
+
+    .p {
+        font-family: inherit;
+        font-size: 15px;
+        line-height: 1.5;
+        margin: auto;
+    }
+    .para {
+        text-align: left;
+    }
+
+
+    /* footer properties */
+.site-footer
+{
+  background-color:#edc0c0;
+  padding:20px 0 10px;
+  font-size:15px;
+  line-height:24px;
+  color:#000000;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin: 0;
+}
+.site-footer h6
+{
+  color:rgb(0, 0, 0);
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:2px;
+  
+}
+.site-footer a
+{
+  color:#000000;
+  margin-left: 10px;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#000000;
+  margin-left: 10px;
+
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#000000;
+  text-decoration:none;
+}
+
+
+.copyright-text
+{
+  margin:0
+}
+
+
+/* donation contents properties */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ancient-192812_1920.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #edc0c0;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #edc0c0;
+    color: white;
+  }
+
+
+
+  .hero-image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/rail-road-191097_1920.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text2 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #edc0c0;
+  }
+  
+  .hero-text2 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text2 button:hover {
+    background-color: #edc0c0;
+    color: white;
+  }
+   
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-img3 {
+    /* The image used */
+    background-image: url("images/PR-Paradise-Raod-Colombo-Sri-Lanka-6.webp");
+  
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+   
+  
+  /* Add styles to the form container */
+  .container3 {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+
+
+
+  .bg-img2 {
+    /* The image used */
+    background-image: url("images/urban.jpg");
+  
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Add styles to the form container */
+  .container2 {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+  
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #edc0c0;
+    color: rgb(0, 0, 0);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+
+
+
+ 
+/* ************donation************** */
+
+
+#fixedDonations{
+    margin-top: 10px;
+    display: block;
+    color: rgb(48, 48, 48);
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-decoration:double;
+  }
+
+  .lbdate{
+    display: block;
+    color: rgb(48, 48, 48);
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 20.5px;
+}
+.custom-select option{
+    text-align: center;
+
+}
+/*---------------------------Donate Section-------------------------------*/
+.donate-us{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 40px 0px rgba(16, 65, 2, 0.274);
+    background-color: rgba(195, 255, 195, 0.11);
+    border-radius: 30px;
+    
+}
+
+.donate-us h1{
+   padding: 20px;
+   padding-top: 60px;
+   font-size: 30px;
+}
+
+.donate-us p{
+    font-size: 20px;
+    padding: 20px;
+}
+.donate-us h1 , .donate-us p{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    
+
+}
+
+.donate-information{
+    width: 90%;
+    margin: auto;
+}
+
+
+.donate-us-col{
+    flex-basis: 31%;
+    border-radius: 12px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 5px;
+    transition: 1s;
+    
+    
+    
+}
+
+.donate-us-col p{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.donate-us-col ul {
+    text-align: left;
+    border: #00000080 solid 2px;
+    border-radius: 12px;
+    padding: 8px;
+    
+}
+
+.donate-us-col ul li{
+    transform: translateX(-20px);
+}
+
+.donate-us-col img{
+    width: 100%;
+    border-radius: 12px;
+    max-height: min-content;
+    
+
+}
+
+.select {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    gap: 12px;
+    width: 1000px;
+  }
+  
+.select__item {
+    padding: 10px;
+    width: 18%;
+    height: 40px;
+    cursor: pointer;
+    font-family: "Heebo", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 3px;
+    background: #ffffff;
+    transition:1s;
+    border: #047016 solid;
+  }
+
+
+.select__item:hover  {
+    border: 1px black solid;
+  }
+
+  
+  .select__item--selected {
+    background: #009578;
+    color: #ffffff;
+    align-items: center;
+  }
+
+
+  #fixedDonations{
+    margin-top: 10px;
+    display: block;
+    color: rgb(48, 48, 48);
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-decoration:double;
+  }
+
+/*---------------------------------------------------Donation form--------------------------------------------------*/
+
+
+
+.donation-form{
+    margin-bottom: 30px;
+    box-shadow: 0 0 40px 0px rgba(16, 65, 2, 0.274);
+    border-radius: 30px;
+    padding: 5px;
+    width: 80%;
+    height: auto;
+    margin:auto;
+}
+
+
+
+.donation-form form input, .donation-form form textarea{
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+
+
+#frmDonation{
+    width: 80%;
+}
+
+
+.paymentDetails{
+    width: 80%;
+}
+
+/*-----------------------------------------------Card Payment details------------------------------------------------------*/
+
+
+.donation-form{
+    background-color: rgba(195, 255, 195, 0.075);
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0px rgba(16, 65, 2, 0.274);
+    overflow: hidden;
+    padding: 20px;
+    width: 65%;
+    padding-top: 30px;
+    padding-right: 30px;
+    margin: auto;
+    margin-bottom: 40px;
+    transition: 1s;
+}
+
+
+
+
+.donation-form  form{
+    margin: auto;
+    padding: 20px;
+
+}
+.donation-form  form .inputBox{
+    margin-top: 10px;
+}
+
+.donation-form form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+
+.donation-form  form .inputBox input,
+.donation-form  form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.donation-form  form .flexbox{
+    display: flex;
+    gap:15px;
+}
+
+.donation-form  form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.donation-form  form .submit-btn{
+    width: 80%;
+    align-items: center;
+    transform: translateX(15%);
+    margin: auto;
+    background:#009578;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.donation-form  form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
