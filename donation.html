@@ -44,153 +44,88 @@
                                        
 
            
-          <div class="donation-form">
-            <label for="Donations" id="fixedDonations" class="lbdate">Select fixed Donation values from below list</label><br>
-                <select name="language" class="custom-select" id="fixedDonatons" multiple >
-                    <option value="100">LKR 100 </option>
-                    <option value="500">LKR 500 </option>
-                    <option value="1000">LKR 1000 </option>
-                    <option value="2500">LKR 2500 </option>
-                    <option value="5000">LKR 5000 </option>
-                    
-                  </select>
-                                             
-                                     
-                               
+         
 
-            <form action="" class="contact-col" id="frmDonation">
-                <label for="nameinput"></label>
-                <input type="text" id="name" placeholder="Enter your Full name" required>
-               
-                <textarea  rows="3" id="address" placeholder="Enter your address" required ></textarea>
-                
-               
-                
-                                      
-            </form>
-        
-            <form class="paymentDetails" action=""  method="post" >
-                <div class="inputBox">
-                    <span>Card number</span>
-                    <label for="cardNumber"></label>
-                    <input type="text" id="cardNum" maxlength="16" class="card-number-input">
-                </div>
-                <div class="inputBox">
-                    <span>Card holder</span>
-                    <label for="cardholder"></label>
-                    <input type="text" id="cardHolder" class="card-holder-input">
-                </div>
-                                         
-                
-                <div class="flexbox">
-                    <div class="inputBox" >
-                        <span>expiration mm</span>
-                        <select name="" id="monthInput" class="month-input">
-                            <option value="month" selected disabled>Month</option>
-                            <option value="01">01</option>
-                            <option value="02">02</option>
-                            <option value="03">03</option>
-                            <option value="04">04</option>
-                            <option value="05">05</option>
-                            <option value="06">06</option>
-                            <option value="07">07</option>
-                            <option value="08">08</option>
-                            <option value="09">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
-                    </div>
-                    <div class="inputBox">
-                        <span>expiration yy</span>
-                        <select name="" id="yearInput" class="year-input" onselect="inputValidatiom()">
-                            <option value="year" selected disabled>Year</option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>  
-                            <option value="2024">2024</option>
-                            <option value="2025">2025</option>
-                            <option value="2026">2026</option>
-                            <option value="2027">2027</option>
-                            <option value="2028">2028</option>
-                            <option value="2029">2029</option>
-                            <option value="2030">2030</option>
-                        </select>
-                    </div>
-                    <div class="inputBox" id="cvvInput">
-                        <span>cvv</span>
-                        <input type="text" id="cvv" maxlength="3" class="cvv-input" >
-                    </div>
-                </div>
-                <input type="button" value="Donate" id="donateBtn" class="submit-btn" onclick="inputValidation();">
-            </form>
-        
-                                       
-        </div>
+<div class="donation-form">
+  <form action="" class="contact-col" id="frmDonation">
+      <label for="nameinput"></label>
+      <input type="text" id="name" placeholder="Enter your Full name" required>
+      <label for="email"></label>
+      <input type="email" id="email" placeholder="Enter your email" required >
+      <textarea  rows="3" id="address" placeholder="Enter your address" required ></textarea>
+      <label for="Donations" id="fixedDonations" class="lbdate">Select fixed Donation values from below list</label><br>
+      <select name="language" class="custom-select" id="fixedDonatons" multiple >
+          <option value="100">LKR 100 </option>
+          <option value="500">LKR 500 </option>
+          <option value="1000">LKR 1000 </option>
+          <option value="2500">LKR 2500 </option>
+          <option value="5000">LKR 5000 </option>
+          
+        </select>
+        <br>
+      <textarea  rows="5" id="comment" placeholder="Donation Commment" required ></textarea>
+      
+  </form>
+
+  <form class="paymentDetails" action=""  method="post" >
+      <div class="inputBox">
+          <span>Card number</span>
+          <label for="cardNumber"></label>
+          <input type="text" id="cardNum" maxlength="16" class="card-number-input">
+      </div>
+      <div class="inputBox">
+          <span>Card holder</span>
+          <label for="cardholder"></label>
+          <input type="text" id="cardHolder" class="card-holder-input">
       </div>
 
-
-          <div class="bg-img3">
-            <form action="/action_page.php" class="container3">
-              <h1>PR concept Store</h1>
-          
-              
-          
-              <button type="submit" class="btn">purchase</button>
-            </form>
-          </div>
-          
-          <div class="bg-img2">
-            <form action="/action_page.php" class="container2">
-              <h1>Urban Island Store</h1>
-          
-              <button type="submit" class="btn">purchase</button>
-            </form>
-          </div>
-                                   
-        
-          <footer class="site-footer">
       
-            <div >
-              <h6>Quick Links</h6>
-              <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="beaches.html">BEACHES</a></li>
-                <li><a href="wildlife.html">WILD LIFE</a></li>
-                <li><a href="activities.html">ACTIVITIES</a></li>
-                <li><a href="heritage.html">HERITAGE</a></li>
-                <li><a href="heritagepage1.html">SIGIRIYA</a></li>
-                <li><a href="Heritage2.html">ADAMS PEAK</a></li>
-                <li><a href="donation.html">PURCHASE AND DONATE PAGE</a></li>
-            </ul>
-            </div>
-                                    
-          <hr>
-                                      
-          
-          
-            <div>
-              <p class="copyright-text">Copyright &copy;  All Rights Reserved by: pooja
-           
-              </p>
-            </div>
-          <!--
-                References
-                1.main image https://fotoworkshops.com/wp-content/uploads/2019/09/DSF0698_LR.jpg
-                2.spices 
-                cardamom https://gosumitup.com/all-about-cardamom-know-your-fine-spice-elaichi
-                pepper https://www.google.com/search?q=Pepper+srilanka&tbm=isch&ved=2ahUKEwiJrYTC4vL3AhUP_TgGHYXYCbUQ2-cCegQIABAA&oq=Pepper+srilanka&gs_lcp=CgNpbWcQAzoHCAAQsQMQQzoECAAQQzoFCAAQgAQ6BggAEB4QBToGCAAQHhAIUIYFWPwSYL4UaABwAHgAgAHLA4gBzBuSAQM0LTiYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=EP-JYonlPI_64-EPhbGnqAs&bih=673&biw=809&rlz=1C5GCEM_enLK990LK993&hl=en-GB#imgrc=U787eyyhQiUHQM
-                cloves https://www.google.com/search?q=cloves+srilanka&tbm=isch&hl=en-GB&chips=q:gloves+sri+lanka,online_chips:organic:t60XQ2Rw9yk%3D&rlz=1C5GCEM_enLK990LK993&sa=X&ved=2ahUKEwjlo8bu4vL3AhVwyKACHee-D_UQ4lYoBHoECAEQJQ&biw=809&bih=673#imgrc=8F9TUnnLcnapsM
-                cumin https://www.google.com/search?q=cumin+srilanka&tbm=isch&ved=2ahUKEwiLpZiO4_L3AhU2zaACHX4BDK4Q2-cCegQIABAA&oq=cumin+srilanka&gs_lcp=CgNpbWcQAzoGCAAQHhAIOgQIABBDOggIABCABBCxAzoHCAAQsQMQQzoFCAAQgARQjgtY2z9gn0VoAHAAeACAAakCiAHzFZIBBjAuMTIuM5gBAKABAaoBC2d3cy13aXotaW1nsAEAwAEB&sclient=img&ei=sP-JYouNK7aag8UP_oKw8Ao&bih=673&biw=809&rlz=1C5GCEM_enLK990LK993&hl=en-GB#imgrc=yA4mfhqGSly_qM&imgdii=iv8ZM9Y_ugj--M
-                coriander https://www.google.com/search?q=coriander&tbm=isch&ved=2ahUKEwiP47Gq4_L3AhUHyKACHduBC6gQ2-cCegQIABAA&oq=Cori&gs_lcp=CgNpbWcQARgAMgcIABCxAxBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CAgAEIAEELEDOgUIABCxA1DFHVioP2D7VGgCcAB4AIABiAKIAaQKkgEFMC42LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=6_-JYs_BM4eQg8UP24OuwAo&bih=673&biw=809&rlz=1C5GCEM_enLK990LK993&hl=en-GB#imgrc=Pe0DTAvViQK9dM
-                lemon grass https://www.google.com/search?q=lemongrass&tbm=isch&hl=en-GB&tbs=rimg:CQ2pXppJm4D7YRgZex375pRk8AEAsgIMCgIIABAAOgQIABAB&rlz=1C5GCEM_enLK990LK993&sa=X&ved=0CBwQuIIBahcKEwjIgMmQ5vL3AhUAAAAAHQAAAAAQEg&biw=809&bih=673#imgrc=i-_m4ivTSYYOWM
-                nutmeg https://www.google.com/search?q=nutmeg+srilanka&tbm=isch&hl=en-GB&chips=q:nutmeg+srilanka,online_chips:nutmeg+oil:MbsY54o6j2Y%3D,online_chips:ceylon+nutmeg+essential+oil:y2XRL-JeIQ4%3D,online_chips:ground+nutmeg:Bi6Xsn3cbI8%3D&rlz=1C5GCEM_enLK990LK993&sa=X&ved=2ahUKEwjciIj95_L3AhXRjtgFHd-fDSIQ4lYoAHoECAEQIw&biw=572&bih=673#imgrc=gz6IJfnoI_DQAM
-                curry leaves https://www.google.com/search?q=curry+leaves+sri+lanka&rlz=1C5GCEM_enLK990LK993&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj57tKX6PL3AhXIBd4KHcYVCiAQ_AUoAXoECAEQAw&biw=572&bih=673&dpr=2#imgrc=ymuXtbEz9N0ZMM
-                ginger https://www.google.com/search?q=ginger+srilanka&tbm=isch&ved=2ahUKEwiD18KY6PL3AhXnjtgFHUOGBMMQ2-cCegQIABAA&oq=ginger+srilanka&gs_lcp=CgNpbWcQAzoFCAAQgAQ6BggAEB4QCDoECAAQGDoECAAQQzoICAAQgAQQsQM6CAgAELEDEIMBOgcIABCxAxBDOgoIABCxAxCDARBDUJ0LWPYyYIQ1aAFwAHgAgAHvAYgBrxaSAQYwLjE2LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=BAWKYoPFIeed4t4Pw4ySmAw&bih=673&biw=572&rlz=1C5GCEM_enLK990LK993#imgrc=fsX-zuP_ZXMHhM
-        
-            -->
-             
-          </footer>
-          <script src="Donation.js"></script>
+      <div class="flexbox">
+          <div class="inputBox" >
+              <span>expiration mm</span>
+              <select name="" id="monthInput" class="month-input">
+                  <option value="month" selected disabled>Month</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+              </select>
+          </div>
+          <div class="inputBox">
+              <span>expiration yy</span>
+              <select name="" id="yearInput" class="year-input" onselect="inputValidatiom()">
+                  <option value="year" selected disabled>Year</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>  
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+              </select>
+          </div>
+          <div class="inputBox" id="cvvInput">
+              <span>cvv</span>
+              <input type="text" id="cvv" maxlength="3" class="cvv-input" >
+          </div>
+      </div>
+      <input type="button" value="Donate" id="donateBtn" class="submit-btn" onclick="inputValidation();">
+  </form>
+
+
+</div> 
+
+<script src="Donation.js"></script>
         </body>
         </html>
             
